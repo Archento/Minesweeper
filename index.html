@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="static/css/style.css">
+  <title>Minesweeper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Fredoka+One&family=Russo+One&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <div class="containerhead">
+    <h1 class="title">
+      <span class="metal clip raise">Minesweeper</span>
+    </h1>
+    <div class="headline">
+      <div>
+        <label for="difficulty-dropdown">Difficulty</label>
+        <select id="difficulty-dropdown">
+          <option value="easy" default>Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div>
+        <label for="soundcheck">Sound</label>
+        <input id="soundcheck" type="checkbox" style="height: 11px;">
+      </div>
+      <span id="timer"></span>
+    </div>
+    <div id="spielfeld" class="container"></div>
+    <button type="button" id="restart-button">restart</button>
+  </div>
+
+</body>
+
+<!-- scripts -->
+<script type="module" src="static/js/main.js"></script>
+
+</html>
